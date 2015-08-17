@@ -182,7 +182,7 @@ public class Common {
         prefs = context.getSharedPreferences(PREFS_FILE_NAME, Context.MODE_PRIVATE);
         Editor editor = prefs.edit();
         editor.putString(prefName, Value);
-        editor.commit();
+        editor.apply();
     }
 
     /**
@@ -213,7 +213,7 @@ public class Common {
         prefs = context.getSharedPreferences(PREFS_FILE_NAME, Context.MODE_PRIVATE);
         Editor editor = prefs.edit();
         editor.putInt(prefName, Value);
-        editor.commit();
+        editor.apply();
     }
 
     // -----------------------------------------------
@@ -243,7 +243,7 @@ public class Common {
         prefs = context.getSharedPreferences(PREFS_FILE_NAME, Context.MODE_PRIVATE);
         Editor editor = prefs.edit();
         editor.putBoolean(prefName, Value);
-        editor.commit();
+        editor.apply();
     }
 
     // -----------------------------------------------
@@ -273,7 +273,7 @@ public class Common {
         prefs = context.getSharedPreferences(PREFS_FILE_NAME, Context.MODE_PRIVATE);
         Editor editor = prefs.edit();
         editor.putFloat(prefName, Value);
-        editor.commit();
+        editor.apply();
     }
 
     // -----------------------------------------------
@@ -304,7 +304,7 @@ public class Common {
         prefs = context.getSharedPreferences(PREFS_FILE_NAME, Context.MODE_PRIVATE);
         Editor editor = prefs.edit();
         editor.putLong(prefName, Value);
-        editor.commit();
+        editor.apply();
     }
 
     // -----------------------------------------------
@@ -376,7 +376,7 @@ public class Common {
         prefs = context.getSharedPreferences(PREFS_FILE_NAME, Context.MODE_PRIVATE);
         Editor editor = prefs.edit();
         editor.clear();
-        editor.commit();
+        editor.apply();
     }
 
     // ===========================================
